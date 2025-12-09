@@ -1,0 +1,40 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Font setup */
+:root {
+  --font-body: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* SF Pro Display is not shipped here (Apple font).
+     On macOS it will use the system SF Pro. 
+     If you have the .otf/.ttf, you can @font-face it and keep the same name. */
+  --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+/* Utility class for headings */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Simple glass effect like the example filter bar */
+.glass {
+  @apply bg-white/80 backdrop-blur-md shadow-lg;
+}
+
+/* Smooth page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
