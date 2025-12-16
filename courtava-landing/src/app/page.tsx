@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* Background image block (replace with real image later) */}
         <div className="absolute inset-0">
           <div className="h-[55vh] md:h-[60vh] bg-linear-to-b from-sky-300 to-sky-500">
-            <div className="h-full w-full bg-[url('/courtava-building.jpg')] bg-cover bg-center mix-blend-overlay opacity-80" />
+            <div className="h-full w-full bg-[url('/hero-building.png')] bg-cover bg-center opacity-70" />
           </div>
           <div className="h-[45vh] md:h-[40vh] bg-[#f5f5f7]" />
         </div>
@@ -34,9 +34,9 @@ export default function HomePage() {
           <header className="flex items-center justify-between">
             <nav className="text-xs md:text-sm text-white/90">
               <ul className="flex gap-6">
-                <li className="cursor-default">About</li>
+                <li className="cursor-default">Activities</li>
                 <li className="cursor-default">How it works</li>
-                <li className="cursor-default">Log in</li>
+                <li className="cursor-default">About Us</li>
                 <li className="cursor-default">FAQ</li>
               </ul>
             </nav>
@@ -62,27 +62,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Fake search bar (non-clickable filters, only CTA works) */}
-          <div className="mt-10 md:mt-16">
-            <div className="glass rounded-full px-4 py-3 md:px-6 md:py-4 flex flex-col md:flex-row items-stretch md:items-center gap-2 md:gap-4">
-              <FilterPill label="City" value="Kigali" />
-              <FilterPill label="Area" value="Remera" />
-              <FilterPill label="Court type" value="Indoor / Outdoor" />
-              <FilterPill label="Time" value="Tonight" />
-              <div className="flex-1 flex justify-end">
-                <Link
-                  href="/signup"
-                  className="inline-flex items-center justify-center rounded-full bg-black px-6 py-2 text-xs md:text-sm text-white hover:scale-[1.02] transition-transform"
-                >
-                  Sign up to get early access
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
 
-        {/* Bottom white curve (just a cleaner edge) */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#f5f5f7]" />
       </section>
 
       {/* Info section */}
@@ -117,7 +98,7 @@ export default function HomePage() {
               title="City Lights Run"
               city="Kigali"
               tag="Open Gym"
-              img="/court-2.jpg"
+              img="/court-2.png"
             />
             <LocationCard
               title="Sunday Hoopers Club"
