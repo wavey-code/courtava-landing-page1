@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* Problem Section */}
       <section className="px-4 md:px-[131px] py-8 md:py-12">
-        <h3 className="text-2xl md:text-4xl font-bold text-black text-center mb-8 md:mb-12 max-w-2xl mx-auto px-2">
+        <h3 className="text-2xl md:text-4xl font-bold text-black text-center mb-8 md:mb-12 max-w-2xl mx-auto px-2" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
           Pickup basketball is harder than it should be.
         </h3>
 
@@ -103,7 +103,7 @@ export default function Home() {
 
       {/* Divider Heading Section */}
       <section className="px-4 md:px-[131px] py-8 md:py-12">
-        <p className="text-2xl md:text-4xl font-bold text-black text-center px-2">
+        <p className="text-2xl md:text-4xl font-bold text-black text-center px-2" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
           Courtava fixes that...
         </p>
       </section>
@@ -160,7 +160,7 @@ export default function Home() {
 
       {/* Final CTA Section */}
       <section className="px-4 md:px-8 pt-6 md:pt-8 pb-8 md:pb-12 text-center">
-        <h3 className="text-2xl md:text-4xl font-bold text-black mb-4 max-w-3xl mx-auto px-2">
+        <h3 className="text-2xl md:text-4xl font-bold text-black mb-4 max-w-3xl mx-auto px-2" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
           Built for hoopers who take runs seriously.
         </h3>
         <p className="text-base md:text-lg text-black mb-6 px-2">
